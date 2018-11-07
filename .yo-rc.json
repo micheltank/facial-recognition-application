@@ -1,0 +1,32 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.com.furb.facialrecognition"
+    },
+    "jhipsterVersion": "5.6.1",
+    "applicationType": "gateway",
+    "baseName": "facialRecognition",
+    "packageName": "br.com.furb.facialrecognition",
+    "packageFolder": "br/com/furb/facialrecognition",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "consul",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YWNlZmUwZjgwN2MzYjUwYjdjNzJjNThkZDJhYmI2NjI0MTY3NGI2NzVhM2RjMzA4NTMxZjA5NTIyOThmMmU4NGJmOTllMTE3NjQ1MWZiMzgzMTIwZGExMmE2OGFmNTExOGIzNmRmMDljODFjNTg0MTU5NGQxMjhlZTE4NzRlMGQ=",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": false
+  }
+}
