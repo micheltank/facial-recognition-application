@@ -37,6 +37,8 @@ public class UserDTO {
 
     @Size(max = 256)
     private String imageUrl;
+    
+    private String faceId;
 
     private boolean activated = false;
 
@@ -179,7 +181,15 @@ public class UserDTO {
         this.authorities = authorities;
     }
 
-    @Override
+    public String getFaceId() {
+		return faceId;
+	}
+
+	public void setFaceId(String faceId) {
+		this.faceId = faceId;
+	}
+
+	@Override
     public String toString() {
         return "UserDTO{" +
             "login='" + login + '\'' +
