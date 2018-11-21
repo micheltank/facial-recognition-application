@@ -1,0 +1,31 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.com.furb.facialrecognition.microservice"
+    },
+    "jhipsterVersion": "5.6.1",
+    "applicationType": "microservice",
+    "baseName": "facialRecognitionMicroservice",
+    "packageName": "br.com.furb.facialrecognition.microservice",
+    "packageFolder": "br/com/furb/facialrecognition/microservice",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "consul",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MDg2Y2ZiZWVkNzFkMDA5NmJiYjE1Y2E0NjljMDIxMGQyNWM5ZTdiMmM3MmQ3ODQ1M2UxMzM3ZWIxYTMxZDE5OTg1ZDg2YTljY2M2NDNlMzQ2YWYxNmZmODFhYWE4ZWQwZmQxMjkyZTcwNzZmN2Q2ZmZkNzVlZTc4MjI4ZmU5OGE=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

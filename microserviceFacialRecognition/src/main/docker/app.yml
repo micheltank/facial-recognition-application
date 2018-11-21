@@ -1,0 +1,17 @@
+version: '2'
+services:
+    facialrecognitionmicroservice-app:
+        image: micheltank/facial_recognition_microservice_furb
+        environment:
+            - _JAVA_OPTIONS=-Xmx512m -Xms256m
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_CLOUD_CONSUL_HOST=consul
+            - SPRING_CLOUD_CONSUL_PORT=8500
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://facialrecognitionmicroservice-postgresql:5432/facialRecognitionMicroservice
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS=kafka
+            - SPRING_CLOUD_STREAM_KAFKA_BINDER_ZK_NODES=zookeeper
+    facialrecognitionmicroservice-postgresql:
+        extends:
+            file: postgresqlMicroservice.yml
+            service: facialrecognitionmicroservice-postgresql   
