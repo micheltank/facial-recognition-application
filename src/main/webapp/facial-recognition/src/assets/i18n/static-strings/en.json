@@ -1,0 +1,13 @@
+{
+  "sara-dialog": {
+    "QUE_BOM": "I'm glad you accepted my help.\nHow can I help you?",
+    "AGENDAMENTO": "How do you want to find your appointment?",
+    "CENTRALIZE_ROSTO_NA_TELA": "Center your face on the screen",
+    "CONFIRMACAO": "I'll tell you arrived.\nPlease check the information shown on the screen, just in case",
+    "DESCULPE_ESCOLHER_OPCOES": "Sorry, we could not find an appointment for you at this moment\nHow about trying one of these options?"
+  },
+  "sara-choice-options": {
+    "RETORNAR": "Go back",
+    "CONFIRMAR": "Confirm"
+  }
+}

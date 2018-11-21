@@ -1,0 +1,55 @@
+@import '~sass/variables';
+@import '~sass/colors';
+
+$entry-by-qr-code-hcf-header-tablet-height: 185px;
+$entry-by-qr-code-hcf-content-tablet-height: calc(
+  100vh - #{$entry-by-qr-code-hcf-header-tablet-height} - #{$page-hcf-footer-height} -
+    #{$page-padding * 2}
+);
+
+.entry-by-qr-code__steps {
+  display: flex;
+  max-width: 1225px;
+  margin-left: auto;
+  margin-right: auto;
+  label {
+    width: 300px;
+  }
+}
+
+.entry-by-qr-code__arrow {
+  width: 30px;
+  margin-top: 122px;
+  margin-left: -15px;
+  flex: 1;
+  img {
+    width: 100px;
+  }
+}
+
+.entry-by-qr-code__step {
+  text-align: center;
+  flex: 1;
+  img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Como área dedicada para o header consome uma grande porção da tela no tablet,
+ ele é diminuido para possibilitar por conteudo na tela */
+.entry-by-qr-code__header {
+  @media only screen and (max-height: 805px) {
+    grid-template:
+      [row1-start] 'header' calc(
+        #{$entry-by-qr-code-hcf-header-tablet-height} - #{$page-hcf-row-gap}
+      )
+      [row1-end]
+      [row2-start] 'content' calc(
+        #{$entry-by-qr-code-hcf-content-tablet-height} - #{$page-hcf-row-gap}
+      )
+      [row2-end]
+      [row3-start] 'footer' $page-hcf-footer-height [row3-end]
+      / 100%;
+  }
+}

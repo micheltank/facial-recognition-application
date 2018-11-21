@@ -1,0 +1,234 @@
+{
+  "app": {
+    "back-button": "Volver",
+    "next-button": "Avanzar",
+    "submit": "Someter",
+    "countdown-prefix": "Este mensaje cerrará automáticamente después ",
+    "countdown-sufix": "s de inactividad",
+    "missing-photo": "Para completar su registro, necesitamos de una nueva foto"
+  },
+  "app-errors-handler": {
+    "title-generic-neterr": "Ocurrió un problema no previsto",
+    "content-neterr": "Dirijase a recepción para realizar la operación manual",
+    "try-again": "Intente nuevamente",
+    "title-autherr": "Su sesión expiró",
+    "content-autherr": "Verifique si usted está conectado e tiene permiso para acceder este contenido, o entre en contacto con el administrador del sistema",
+    "confirmation-btn": "Entendido",
+    "title-inactivity": "¿Hay alguien ahí?",
+    "subtitle-inactivity": "",
+    "content-inactivity": "Toque en la pantalla para continuar.",
+    "title-windowed": "Modo ventana detectado",
+    "content-windowed": "Este aplicativo solo puede ser usado en modo pantalla completa",
+    "subtitle-invalid-credential": "Usuario y contraseña inválidos",
+    "content-invalid-credential": "Contacte el administrador del sistema."
+  },
+  "backend-errors": {
+    "title": {
+      "DOCUMENT_TYPE_NOT_FOUND": "Ningún tipo de documento encontrado",
+      "PERSON_NOT_FOUND_BY_DOCUMENT": "Documento no encontrado",
+      "DOCUMENT_NUMBER_DUPLICATE": "El documento informado está duplicado",
+      "PERSON_WITHOUT_VALID_ROLE": "Usted no posee un papel valido",
+      "PERSON_HAVE_PROVISORY_CREDENTIAL_IN_USE": "Tarjeta de identificación provisional en abierto",
+      "ALREADY_USED_MAXIMUM_NUMBER_OF_CARDS": "Limite de provisorios alcanzado",
+      "INVALID_USER_AND_PASSWORD": "Login o contraseña inválidos",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_EMPLOYEE": "Persona no encontrada",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_PARTNER": "Persona no encontrada",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_THIRD_PARTIES": "Persona no encontrada",
+      "CREDENTIAL_CARD_NUMBER_NOT_FOUND": "Credencial no encontrada",
+      "PERSON_NOT_FOUND": "Persona no encontrada",
+      "UNAVAIBLE_SERVICE": "Servicio no disponible",
+      "STATUS_FAIL": "Servicio no disponible",
+      "SCHEDULING_NOT_FOUND": "Programación no encontrada.",
+      "SCHEDULING_NOT_FOUND_BY_DOCUMENT": "Programación no encontrada",
+      "SCHEDULING_NOT_FOUND_BY_LOCATOR_CODE": "Programación no encontrada",
+      "PHOTO_TOO_LONG": "Ocurrió un problema al actualizar la foto",
+      "TIMEOUT_WAITING_SYNC_MESSAGE": "Ocurrió un error inesperado en el servidor",
+      "SELF_SERVICE_TERMINAL_IS_OUT_OF_ID_CARDS": "No fue posible emitir la tarjeta de identificación",
+      "ERROR_EXECUTING_REQUEST": "Ocurrió un error inesperado en el servidor",
+      "SELF_SERVICE_TERMINAL_NOT_FOUND_BY_ID": "Terminal no encontrado",
+      "SELF_SERVICE_TERMINAL_WITHOUT_ID": "Terminal no encontrado",
+      "undefined": "Ocurrió un problema no previsto",
+      "SELF_SERVICE_TERMINAL_IS_DISABLED": "El terminal está inactivo",
+      "VISIT_TYPE_NOT_FOUND": "Tipo de visita no encontrada",
+      "ERROR_CARD_BIN_FULL": "No fue posible emitir la tarjeta de identificación",
+      "DIGICON_DISPENSER_INITIALIZE": "Falla al llamar el dispenser",
+      "DIGICON_DISPENSER_CONNECTION": "Falla al llamar el dispenser",
+      "SELF_SERVICE_TERMINAL_IN_USE": "El terminal ya está en uso",
+      "DIGICON_PRINTER_CONNECTION": "Falla al comunicar con la impresora",
+      "DIGICON_PRINTER_UNEXPECTED": "Falla al llamar la impresora",
+      "DIGICON_PRINTER_WITHOUT_PAPER": "No fue posible imprimir el comprobante",
+      "DIGICON_DISPENSER_UNEXPECTED": "Falla al llamar dispenser",
+      "MULTIPLE_SCHEDULES_BY_DOCUMENT": "No fue posible realizar la entrada",
+      "VIDEOSOFT_CONNECT_DISPENSER": "Falla al comunicar con el dispenser",
+      "VIDEOSOFT_UNEXPECTED_DISPENSER": "Falla al llamar dispenser",
+      "SELF_SERVICE_TERMINAL_NOT_SELECTED": "No fue posible configurar el terminal",
+      "INVALID_PHOTO_TYPE": "Falla al enviar foto",
+      "CONFIGCENTER_INVALID_SAMSENIOR": "Configuración inválida",
+      "PERSON_WITHOUT_PHOTO": "Persona sin foto",
+      "SELF_SERVICE_TERMINAL_IS_NOT_PROPERLY_CONFIGURED": "Configuración inválida"
+    },
+    "subtitle": {
+      "DOCUMENT_TYPE_NOT_FOUND": "No fue posible cargar los tipos de documentos configurados",
+      "PERSON_NOT_FOUND_BY_DOCUMENT": "La persona correspondiente a este documento no fue encontrada",
+      "DOCUMENT_NUMBER_DUPLICATE": "Ese documento está asociado a mas de una persona",
+      "PERSON_WITHOUT_VALID_ROLE": "Papel inválido para retirada de credencial provisional",
+      "PERSON_HAVE_PROVISORY_CREDENTIAL_IN_USE": "Usted posee otra tarjeta de identificación provisional activa",
+      "ALREADY_USED_MAXIMUM_NUMBER_OF_CARDS": "Usted ya utilizó la cantidad límite de tarjetas de identificación provisionales en este mes",
+      "INVALID_USER_AND_PASSWORD": "La contraseña o el login que usted ingresó están equivocados",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_EMPLOYEE": "Terminal de autoservicio no permite emisión de provisionales para empleados",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_PARTNER": "Terminal de autoservicio no permite emisión de provisionales para asociados",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_THIRD_PARTIES": "Terminal de autoservicio no permite emisión de provisionales para terceros",
+      "CREDENTIAL_CARD_NUMBER_NOT_FOUND": "Tarjeta de identificación no encontrada",
+      "PERSON_NOT_FOUND": "No fue posible encontrar el registro de la persona informada",
+      "UNAVAIBLE_SERVICE": "Este recurso está temporalmente indisponible",
+      "STATUS_FAIL": "Este recurso está temporalmente indisponible",
+      "SCHEDULING_NOT_FOUND": "El número de la programación no fue encontrado",
+      "SCHEDULING_NOT_FOUND_BY_LOCATOR_CODE": "La programación correspondiente a este código localizador no fue encontrado",
+      "SCHEDULING_NOT_FOUND_BY_DOCUMENT": "La programación correspondiente a este documento no fue encontrado.",
+      "PHOTO_TOO_LONG": "El tamaño de la imagen excedió el limite máximo soportado",
+      "TIMEOUT_WAITING_SYNC_MESSAGE": "No fue posible establecer conexión en el momento",
+      "ERROR_EXECUTING_REQUEST": "Eso puede haber ocurrido debido a alguna manutención en nuestros servidores",
+      "SELF_SERVICE_TERMINAL_NOT_FOUND_BY_ID": "El terminal de autoservicio no está configurado correctamente",
+      "SELF_SERVICE_TERMINAL_WITHOUT_ID": "El terminal de autoservicio no está configurado correctamente",
+      "undefined": "Eso puede haber ocurrido debido a alguna falla durante la navegación",
+      "SELF_SERVICE_TERMINAL_IS_DISABLED": "No fue posible buscar las configuraciones del terminal porque el está inactivo",
+      "VISIT_TYPE_NOT_FOUND": "El tipo de visita vinculada a esta programación no fue encontrada",
+      "ERROR_CARD_BIN_FULL": "El compartimiento de tarjetas de identificación descartados está lleno",
+      "DIGICON_DISPENSER_INITIALIZE": "La configuración del dispenser está incorrecta",
+      "DIGICON_DISPENSER_CONNECTION": "No fue posible establecer comunicación con el dispenser de la tarjeta de identificación",
+      "SELF_SERVICE_TERMINAL_IN_USE": "Este terminal está siendo usado en otra máquina",
+      "DIGICON_PRINTER_CONNECTION": "No fue posible establecer comunicación con la impresora",
+      "DIGICON_PRINTER_UNEXPECTED": "Ocurrió un error inesperado al intentar establecer comunicación con la impresora",
+      "DIGICON_PRINTER_WITHOUT_PAPER": "La impresora está sin papel",
+      "DIGICON_DISPENSER_UNEXPECTED": "Ocorrió un error inesperado al intentar establecer comunicación con el dispenser",
+      "MULTIPLE_SCHEDULES_BY_DOCUMENT": "Hay más de una programación para el mismo documento en este período",
+      "VIDEOSOFT_CONNECT_DISPENSER": "No fue posible establecer comunicación con el dispenser de la tarjeta de identificación",
+      "VIDEOSOFT_UNEXPECTED_DISPENSER": "Ocurrió un error inesperado al intentar establecer comunicación con el dispenser",
+      "SELF_SERVICE_TERMINAL_NOT_SELECTED": "Es necesario seleccionar un terminal para uso",
+      "INVALID_PHOTO_TYPE": "El formato enviado no es soportado",
+      "CONFIGCENTER_INVALID_SAMSENIOR": "Verifique la configuración del SeniorConfigCenter",
+      "PERSON_WITHOUT_PHOTO": "No es posible realizar el reconocimiento facial para personas sin foto registrada en el sistema",
+      "SELF_SERVICE_TERMINAL_IS_NOT_PROPERLY_CONFIGURED": "Verifique si el valor del puerto COM está configurado correctamente"
+    }
+  },
+  "home": {
+    "welcome": "¡Sea bienvenido!",
+    "obtain-temporary-id-card": "Retirar la tarjeta de identificación provisoria",
+    "search-scheduled-visit": "Buscar visita programada",
+    "developed-by": "Desarrollado por"
+  },
+  "available-document-types": {
+    "title": "Seleccione un tipo de documento",
+    "subtitle": "Documento proporcionado para registro"
+  },
+  "entry-by-doc": {
+    "title-doc": "Informe su documento",
+    "doc-placeholder": "Ingrese su documento"
+  },
+  "entry-by-locator-code": {
+    "title-doc": "Informe el número del localizador"
+  },
+  "entry-by-login": {
+    "title-login": "Informe su login y contraseña",
+    "user-field": "Login",
+    "pass-field": "Contraseña",
+    "user-placeholder": "Ingrese su login",
+    "password-placeholder": "Ingrese su contraseña"
+  },
+  "available-not-scheduled-entry-types": {
+    "title": "Seleccione la forma de entrada",
+    "option-doc": "Entrar con documento",
+    "option-user": "Entrar con usuario y contraseña"
+  },
+  "available-scheduled-entry-types": {
+    "title": "Seleccione una forma de identificación",
+    "option-doc": "Documento",
+    "option-code": "Localizador",
+    "option-qrcode": "Código QR"
+  },
+  "accept-terms": {
+    "title": "Orientaciones y término de la aceptación",
+    "agreed": "Aceptar"
+  },
+  "reason": {
+    "title": "Motivo",
+    "subtitle": "Antes de proseguir, cuéntanos el motivo de la solicitud"
+  },
+  "success-feedback": {
+    "thanks-for-information": "Gracias por las informaciones.",
+    "take-your-id-card": "¡Usted ya puede retirar su tarjeta de identificación!"
+  },
+  "person-details": {
+    "title": "¡Hola {{name}}!",
+    "subtitle": "Confiera con atención sus datos",
+    "information-title": "Datos personales",
+    "change-photo": "Cambiar fotografía",
+    "phone": "Teléfono",
+    "email": "E-mail"
+  },
+  "timeline": {
+    "start": "Inicio",
+    "identification": "Identificación",
+    "reason": "Motivo",
+    "confirmation": "Confirmación",
+    "orientation": "Orientación",
+    "survey": "Encuesta",
+    "success": "Éxito"
+  },
+  "photo-capture": {
+    "take-photo-manual-feedback": "Face encontrada! Haga clic en 'Sacar foto' y aguarde $X segundos",
+    "take-photo-automatic-feedback": "Face encontrada! La foto será capturada en $X segundos",
+    "face-found-feedback-negative": "Face no encontrada. Centralice su rostro en la pantalla",
+    "face-found-feedback-positive": "¡Cara encontrada!"
+  },
+  "schedule-details": {
+    "title": "¡Hola {{name}}!",
+    "subtitle": "Confiera con atención sus datos",
+    "information-title": "Datos personales",
+    "change-photo": "Cambiar fotografía",
+    "phone": "Teléfono",
+    "visited-person": "Persona visitada",
+    "local": "Lugar de la reunión/encuentro",
+    "orientation-message": "En caso de dudas solicite orientación con el asistente.",
+    "name": "Nombre"
+  },
+  "document-type": {
+    "DOCUMENTO_INDEFINIDO": "Documento no informado",
+    "DOCUMENTO_IDENTIDADE": "Identidad",
+    "DOCUMENTO_CPF": "CPF",
+    "DOCUMENTO_CNH": "LNC",
+    "DOCUMENTO_PASSAPORTE": "Pasaporte",
+    "REGISTRO_ESTRANGEIRO": "Registro extranjero",
+    "DOCUMENTO_OUTROS": "Otro documento",
+    "SEM_DOCUMENTO": "Sin documento"
+  },
+  "camera": {
+    "take-photo": "Tomar foto",
+    "error-title": "Error en la cámara",
+    "error-subtitle": "No fue posible iniciar la cámara en este dispositivo"
+  },
+  "schedule-by-facial-recognition": {
+    "schedule-not-found-title": "Programación no encontrada",
+    "generic-content": "Toque en OK o aguarde {{seconds}} segundo(s) para proseguir para otras opciones de entrada"
+  },
+  "person-facial-recognition": {
+    "person-not-found-title": "La cara encontrada no corresponde al documento informado"
+  },
+  "entry-by-qr-code": {
+    "step-1": "Abra el QR Code que usted recibió en el e-mail de ajendamiento",
+    "step-2": "Aproxime el dispositivo con la pantalla girada para el lector",
+    "step-3": "Espere mientras el sistema lee su código y redirecciona para la pantalla de visita"
+  },
+  "entry-by-qr-code-camera": {
+    "failure-title": "No conseguimos leer el Código QR",
+    "failure-subtitle": "Posicione nuevamente su Código QR en el lector"
+  },
+  "chat-bot-popup": {
+    "hello": "¡Hola!",
+    "sara-presentation": "Yo soy Sara, su assistente virtual.\nEstoy aquí para agilizar su entrada.",
+    "not-now-sara": "¡Ahora no, Sara!",
+    "great-lets-go": "¡Excelente!, ¡Aquí vamos!",
+    "senior-virtual-assistent": "Asistente virtual Senior",
+    "ok": "Todo bien, si cambias de idea solo\ndebes presionar el botón abajo\nque yo vuelvo para ayudarte."
+  }
+}

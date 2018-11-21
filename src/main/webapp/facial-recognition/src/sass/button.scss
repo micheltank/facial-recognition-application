@@ -1,0 +1,61 @@
+@import '~sass/variables.scss';
+@import '~sass/colors.scss';
+
+$button-in-transition-duration: $transition-in-duration * 0.6;
+
+.app-btn {
+  white-space: normal;
+  font-size: 1.6rem;
+  min-height: 3em;
+  min-width: 8em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.app-btn-md {
+  min-width: 250px;
+  height: 3em;
+}
+
+@mixin app-btn--themed {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-color: var(--color-theme);
+  transition: filter $transition-out-duration,
+    box-shadow $transition-out-duration, color $transition-out-duration,
+    background-color $button-in-transition-duration;
+  &:disabled {
+    border-color: var(--color-theme);
+  }
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    background-color: var(--color-theme) !important;
+    border-color: var(--color-theme) !important;
+    color: $white !important;
+    filter: brightness(90%);
+    transition: filter $button-in-transition-duration,
+      box-shadow $button-in-transition-duration, color $transition-out-duration,
+      background-color $button-in-transition-duration;
+  }
+  &:focus:not(:disabled) {
+    box-shadow: 0 0 0 0.2rem rgba(var(--color-theme-rgb), 0.5) !important;
+    transition: filter $button-in-transition-duration,
+      box-shadow $button-in-transition-duration, color $transition-out-duration,
+      background-color $button-in-transition-duration;
+  }
+}
+
+.app-btn-primary--themed {
+  background-color: var(--color-theme);
+  color: $white;
+  @include app-btn--themed();
+  &:disabled {
+    background-color: var(--color-theme);
+  }
+}
+
+.app-btn-outline-primary--themed {
+  color: var(--color-theme);
+  @include app-btn--themed();
+}

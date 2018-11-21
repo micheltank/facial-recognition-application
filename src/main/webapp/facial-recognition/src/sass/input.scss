@@ -1,0 +1,31 @@
+@import '~sass/colors';
+
+.app-label {
+  font-size: 1.4rem;
+}
+
+.app-input {
+  height: 3.4rem;
+  font-size: 1.6rem;
+  &[placeholder] {
+    font-size: 1.3rem;
+  }
+}
+
+.app-input--themed {
+  &:focus,
+  &:active {
+    border-color: rgba(var(--color-theme-rgb), 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(var(--color-theme-rgb), 0.25);
+  }
+}
+
+.app-input--md {
+  width: 300px;
+}
+
+.app-input--responsive {
+  min-width: 5em;
+  max-width: 100em;
+  width: unset;
+}

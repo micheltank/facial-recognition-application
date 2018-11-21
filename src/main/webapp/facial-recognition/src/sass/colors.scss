@@ -1,0 +1,15 @@
+@import 'node_modules/@seniorbr/sam-styles/sass/colors';
+
+$gray-beta: #c7c7c7;
+$gray-zeta: #999999;
+$white-alfa: #f3f1f1;
+
+// necessario duplicar a variavel senior-green
+// pq nao é possível referenciar variaves sass
+// como valor de variaveis css;
+:root {
+  --senior-green: #008267;
+  --senior-green-rgb: 0, 130, 103;
+  --color-theme: var(--senior-green);
+  --color-theme-rgb: var(--senior-green-rgb);
+}

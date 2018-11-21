@@ -1,0 +1,104 @@
+// customizacoes de dialogs do primeng
+
+@import '~sass/colors.scss';
+@import '~sass/elevations.scss';
+@import '~sass/tokens.scss';
+
+:root {
+  --p-dialog-title-text-font-size: 2.2rem;
+  --p-dialog-title-subtext-font-size: 1.5rem;
+  --p-dialog-content-text-font-size: 1.9rem;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.ui-dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $white-alfa !important;
+  min-width: 30vmax !important;
+  min-height: 30vmax !important;
+  max-width: 60vmax !important;
+  max-height: 60vmax !important;
+  border-radius: $border-radius-5 !important;
+}
+
+.ui-dialog.ui-shadow {
+  @include sds-elevation(10);
+}
+
+.ui-dialog-titlebar,
+.ui-dialog-content,
+.ui-dialog-footer {
+  padding: 2rem !important;
+}
+
+.ui-dialog-titlebar {
+  border-top-left-radius: $border-radius-5 !important;
+  border-top-right-radius: $border-radius-5 !important;
+  background: $white !important;
+  border-bottom: 1px solid $gray !important;
+  color: $red !important;
+  text-align: center;
+}
+
+.ui-dialog-titlebar-icon {
+  display: none !important;
+}
+
+.ui-dialog-content,
+.ui-dialog-footer {
+  background-color: transparent !important;
+  border-bottom-left-radius: $border-radius-5 !important;
+  border-bottom-right-radius: $border-radius-5 !important;
+}
+
+.ui-dialog-content {
+  border-bottom: none !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui-dialog__icon {
+  width: 80px;
+}
+
+.p-dialog__content-text {
+  font-size: var(--p-dialog-content-text-font-size);
+  text-align: center;
+}
+
+.ui-dialog-footer {
+  border-top: none !important;
+  // o ngprime cria um elemento p-footer para servir de
+  // container para os itens do footer
+  > p-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.p-dialog__title-text,
+.p-dialog__title-subtext {
+  display: block;
+}
+
+.p-dialog__title-text {
+  font-size: var(--p-dialog-title-text-font-size);
+}
+
+.p-dialog__title-subtext {
+  font-size: var(--p-dialog-title-subtext-font-size);
+}
+
+.p-dialog__closing-info,
+.p-dialog__closing-info-icon {
+  color: $gray;
+}

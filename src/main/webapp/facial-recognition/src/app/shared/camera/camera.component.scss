@@ -1,0 +1,22 @@
+$camera-container-background: #2b2b2b;
+
+.app-camera-video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(-1, 1);
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  filter: FlipH;
+}
+
+.face-frame-canvas {
+  opacity: 0.3;
+}
+
+.app-camera-container {
+  position: relative;
+  background-color: $camera-container-background;
+}

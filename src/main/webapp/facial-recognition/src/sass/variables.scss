@@ -1,0 +1,10 @@
+@import 'node_modules/@seniorbr/sam-styles/sass/variables';
+
+$page-hcf-header-height: 275px;
+$page-hcf-footer-height: 80px;
+$page-padding: 30px;
+$page-hcf-content-height: calc(
+  100vh - #{$page-hcf-header-height} - #{$page-hcf-footer-height} - #{$page-padding *
+    2}
+);
+$page-hcf-row-gap: 25px;

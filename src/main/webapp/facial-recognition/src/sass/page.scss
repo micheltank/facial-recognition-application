@@ -1,0 +1,93 @@
+@import '~sass/variables';
+
+.app-page {
+  height: 100vh;
+  width: 100vw;
+  padding: $page-padding;
+}
+
+.app-page__title {
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.app-page__subtitle {
+  font-weight: normal;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0;
+}
+
+.app-page__title--color-theme {
+  color: var(--color-theme);
+}
+
+.app-page__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// hcf = header - content - footer
+.app-page--hcf {
+  display: grid;
+  grid-row-gap: $page-hcf-row-gap;
+  grid-template:
+    [row1-start] 'header' calc(
+      #{$page-hcf-header-height} - #{$page-hcf-row-gap}
+    )
+    [row1-end]
+    [row2-start] 'content' calc(
+      #{$page-hcf-content-height} - #{$page-hcf-row-gap}
+    )
+    [row2-end]
+    [row3-start] 'footer' $page-hcf-footer-height [row3-end]
+    / 100%;
+}
+
+.app-page--hcf__header {
+  align-self: start;
+  grid-area: header;
+  height: 100%;
+  text-align: center;
+}
+
+.app-page--hcf__content {
+  align-self: center;
+  grid-area: content;
+  height: 100%;
+  overflow: auto;
+}
+
+.app-page--hcf__footer {
+  grid-area: footer;
+  align-self: end;
+  height: 100%;
+}
+
+.app-page--content__options {
+  align-self: center;
+  grid-area: content;
+  height: 100%;
+  overflow: auto;
+
+  display: grid;
+  grid-template-columns: 1fr auto auto auto 1fr;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas: '. . . . .'// Área vazia para manter um espaçamento entre o container e o header
+    '. options-container options-container options-container .''. . . . .'; // Área vazia para manter um espaçamento entre o container e o footer
+  justify-content: center;
+}
+
+.app-page--options-container {
+  grid-area: options-container;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 290px 290px 290px;
+  justify-content: center;
+  align-content: start;
+}

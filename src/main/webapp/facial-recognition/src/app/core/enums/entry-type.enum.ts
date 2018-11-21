@@ -1,0 +1,4 @@
+export enum EntryType {
+  NOT_SCHEDULED = 'NOT_SCHEDULED',
+  SCHEDULED = 'SCHEDULED'
+}

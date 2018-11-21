@@ -1,0 +1,29 @@
+// bootstrap
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/buttons';
+@import '../node_modules/bootstrap/scss/button-group';
+@import '../node_modules/bootstrap/scss/input-group';
+@import '../node_modules/bootstrap/scss/forms';
+
+// primeng
+@import '../node_modules/primeng/resources/themes/omega/theme.css';
+@import '../node_modules/primeng/resources/primeng.css';
+
+// sam
+@import '../node_modules/@seniorbr/sam-styles/sass/tokens';
+
+// app
+@import './mixins';
+@import './tokens';
+@import './resets';
+@import './primeng/p-dialog';
+@import './page';
+@import './app-virtual-keyboard';
+@import './button';
+@import './input';
+@import './facial-recognition';
+@import './entry-by-qr-code';
+@import './utils';

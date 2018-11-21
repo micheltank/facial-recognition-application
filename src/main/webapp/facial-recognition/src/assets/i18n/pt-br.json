@@ -1,0 +1,235 @@
+{
+  "app": {
+    "back-button": "Voltar",
+    "next-button": "Avançar",
+    "submit": "Submeter",
+    "countdown-prefix": "Esta mensagem fechará automaticamente após ",
+    "countdown-sufix": "s de inatividade",
+    "missing-photo": "Para completar o seu cadastro, precisamos de uma nova foto"
+  },
+  "app-errors-handler": {
+    "title-generic-neterr": "Ocorreu um problema não previsto",
+    "content-neterr": "Dirija-se à recepção para realizar a operação manual",
+    "try-again": "Tente novamente",
+    "title-autherr": "Sua sessão expirou",
+    "content-autherr": "Verifique se você está conectado e tem permissão para acessar este conteúdo, ou entre em contato com o administrador do sistema",
+    "confirmation-btn": "Entendido",
+    "title-inactivity": "Alguém aí?",
+    "subtitle-inactivity": "",
+    "content-inactivity": "Toque na tela para continuar",
+    "title-windowed": "Modo janela detectado",
+    "content-windowed": "Este aplicativo só pode ser usado em modo tela cheia",
+    "subtitle-invalid-credential": "Usuário e senha inválidos",
+    "content-invalid-credential": "Contate o administrador do sistema."
+  },
+  "backend-errors": {
+    "title": {
+      "DOCUMENT_TYPE_NOT_FOUND": "Nenhum tipo de documento encontrado",
+      "PERSON_NOT_FOUND_BY_DOCUMENT": "Documento não encontrado",
+      "DOCUMENT_NUMBER_DUPLICATE": "O documento informado está duplicado",
+      "PERSON_WITHOUT_VALID_ROLE": "Você não possui um papel válido",
+      "PERSON_HAVE_PROVISORY_CREDENTIAL_IN_USE": "Crachá provisório em aberto",
+      "ALREADY_USED_MAXIMUM_NUMBER_OF_CARDS": "Limite de provisórios atingido",
+      "INVALID_USER_AND_PASSWORD": "Usuário e senha inválidos",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_EMPLOYEE": "Pessoa não encontrada",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_PARTNER": "Pessoa não encontrada",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_THIRD_PARTIES": "Pessoa não encontrada",
+      "CREDENTIAL_CARD_NUMBER_NOT_FOUND": "Credencial não encontrada",
+      "PERSON_NOT_FOUND": "Pessoa não encontrada",
+      "UNAVAIBLE_SERVICE": "Serviço indisponível",
+      "STATUS_FAIL": "Ocorreu um erro inesperado no servidor",
+      "SCHEDULING_NOT_FOUND": "Agendamento não encontrado",
+      "SCHEDULING_NOT_FOUND_BY_DOCUMENT": "Agendamento não encontrado",
+      "SCHEDULING_NOT_FOUND_BY_LOCATOR_CODE": "Agendamento não encontrado",
+      "PHOTO_TOO_LONG": "Ocorreu um problema ao atualizar a foto",
+      "TIMEOUT_WAITING_SYNC_MESSAGE": "Ocorreu um erro inesperado no servidor",
+      "SELF_SERVICE_TERMINAL_IS_OUT_OF_ID_CARDS": "Não foi possível emitir o crachá",
+      "ERROR_EXECUTING_REQUEST": "Ocorreu um erro inesperado no servidor",
+      "SELF_SERVICE_TERMINAL_NOT_FOUND_BY_ID": "Terminal não encontrado",
+      "SELF_SERVICE_TERMINAL_WITHOUT_ID": "Terminal não encontrado",
+      "undefined": "Ocorreu um problema não previsto",
+      "SELF_SERVICE_TERMINAL_IS_DISABLED": "O terminal está inativo",
+      "VISIT_TYPE_NOT_FOUND": "Tipo de visita não encontrado",
+      "ERROR_CARD_BIN_FULL": "Não foi possível emitir o crachá",
+      "DIGICON_DISPENSER_INITIALIZE": "Falha ao chamar o dispenser",
+      "DIGICON_DISPENSER_CONNECTION": "Falha ao comunicar com o dispenser",
+      "SELF_SERVICE_TERMINAL_IN_USE": "O terminal já está em uso",
+      "DIGICON_PRINTER_CONNECTION": "Falha ao comunicar com a impressora",
+      "DIGICON_PRINTER_UNEXPECTED": "Falha ao chamar a impressora",
+      "DIGICON_PRINTER_WITHOUT_PAPER": "Não foi possível imprimir o comprovante",
+      "DIGICON_DISPENSER_UNEXPECTED": "Falha ao chamar dispenser",
+      "MULTIPLE_SCHEDULES_BY_DOCUMENT": "Não foi possível realizar a entrada",
+      "VIDEOSOFT_CONNECT_DISPENSER": "Falha ao comunicar com o dispenser",
+      "VIDEOSOFT_UNEXPECTED_DISPENSER": "Falha ao chamar dispenser",
+      "SELF_SERVICE_TERMINAL_NOT_SELECTED": "Não foi possível configurar o terminal",
+      "INVALID_PHOTO_TYPE": "Falha ao enviar foto",
+      "CONFIGCENTER_INVALID_SAMSENIOR": "Configuração inválida",
+      "PERSON_WITHOUT_PHOTO": "Pessoa sem foto",
+      "SELF_SERVICE_TERMINAL_IS_NOT_PROPERLY_CONFIGURED": "Configuração inválida"
+    },
+    "subtitle": {
+      "DOCUMENT_TYPE_NOT_FOUND": "Não foi possível carregar os tipos de documentos configurados",
+      "PERSON_NOT_FOUND_BY_DOCUMENT": "A pessoa correspondente a este documento não foi encontrada",
+      "DOCUMENT_NUMBER_DUPLICATE": "Esse documento está associado a mais de uma pessoa",
+      "PERSON_WITHOUT_VALID_ROLE": "Papel inválido para retirada de credencial provisória",
+      "PERSON_HAVE_PROVISORY_CREDENTIAL_IN_USE": "Você possui outro crachá provisório ativo",
+      "ALREADY_USED_MAXIMUM_NUMBER_OF_CARDS": "Você já utilizou a quantidade limite de crachás provisórios nesse mês",
+      "INVALID_USER_AND_PASSWORD": "A senha ou o login que você digitou estão errados.",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_EMPLOYEE": "Terminal de autoatendimento não permite emissão de provisórios para empregados",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_PARTNER": "Terminal de autoatendimento não permite emissão de provisórios para parceiros",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_THIRD_PARTIES": "Terminal de autoatendimento não permite emissão de provisórios para terceiros",
+      "CREDENTIAL_CARD_NUMBER_NOT_FOUND": "Número da credencial não encontrado",
+      "PERSON_NOT_FOUND": "Não foi possível encontrar o cadastro da pessoa informada",
+      "UNAVAIBLE_SERVICE": "O recurso está temporariamente indisponível",
+      "STATUS_FAIL": "Isso pode ter ocorrido devido a alguma manutenção em nossos servidores",
+      "SCHEDULING_NOT_FOUND": "O número do agendamento não foi encontrado",
+      "SCHEDULING_NOT_FOUND_BY_LOCATOR_CODE": "O agendamento correspondente a este código localizador não foi encontrado",
+      "SCHEDULING_NOT_FOUND_BY_DOCUMENT": "O agendamento correspondente a este documento não foi encontrado",
+      "PHOTO_TOO_LONG": "O tamanho da imagem excedeu o limite máximo suportado",
+      "TIMEOUT_WAITING_SYNC_MESSAGE": "Não foi possível estabelecer conexão no momento",
+      "SELF_SERVICE_TERMINAL_IS_OUT_OF_ID_CARDS": "O terminal não possui crachás disponíveis",
+      "ERROR_EXECUTING_REQUEST": "Isso pode ter ocorrido devido a alguma manutenção em nossos servidores",
+      "SELF_SERVICE_TERMINAL_NOT_FOUND_BY_ID": "O terminal de autoatendimento não está configurado corretamente",
+      "SELF_SERVICE_TERMINAL_WITHOUT_ID": "O terminal de autoatendimento não está configurado corretamente",
+      "undefined": "Isso pode ter ocorrido devido a alguma falha durante a navegação",
+      "SELF_SERVICE_TERMINAL_IS_DISABLED": "Não foi possível buscar as configurações do terminal porque ele está inativo",
+      "VISIT_TYPE_NOT_FOUND": "O tipo de visita vinculado a este agendamento não foi encontrado",
+      "ERROR_CARD_BIN_FULL": "O compartimento de crachás descartados está cheio",
+      "DIGICON_DISPENSER_INITIALIZE": "A configuração do dispenser está incorreta",
+      "DIGICON_DISPENSER_CONNECTION": "Não foi possível estabelecer comunicação com o dispenser do crachá",
+      "SELF_SERVICE_TERMINAL_IN_USE": "Este terminal está sendo usado em outra máquina",
+      "DIGICON_PRINTER_CONNECTION": "Não foi possível estabelecer comunicação com a impressora",
+      "DIGICON_PRINTER_UNEXPECTED": "Ocorreu um erro inesperado ao tentar estabelecer comunicação com a impressora",
+      "DIGICON_PRINTER_WITHOUT_PAPER": "A impressora está sem papel",
+      "DIGICON_DISPENSER_UNEXPECTED": "Ocorreu um erro inesperado ao tentar estabelecer comunicação com o dispenser",
+      "MULTIPLE_SCHEDULES_BY_DOCUMENT": "Há mais de um agendamento para o mesmo documento neste período",
+      "VIDEOSOFT_CONNECT_DISPENSER": "Não foi possível estabelecer comunicação com o dispenser do crachá",
+      "VIDEOSOFT_UNEXPECTED_DISPENSER": "Ocorreu um erro inesperado ao tentar estabelecer comunicação com o dispenser",
+      "SELF_SERVICE_TERMINAL_NOT_SELECTED": "É necessário selecinar um terminal para uso",
+      "INVALID_PHOTO_TYPE": "O formato enviado não é suportado",
+      "CONFIGCENTER_INVALID_SAMSENIOR": "Verifique a configuração do SeniorConfigCenter",
+      "PERSON_WITHOUT_PHOTO": "Não é possível realizar o reconhecimento facial para pessoas sem foto cadastrada no sistema",
+      "SELF_SERVICE_TERMINAL_IS_NOT_PROPERLY_CONFIGURED": "Verifique se o valor da porta COM está configurado corretamente"
+    }
+  },
+  "home": {
+    "welcome": "Seja bem vindo!",
+    "obtain-temporary-id-card": "Retirar crachá provisório",
+    "search-scheduled-visit": "Buscar visita agendada",
+    "developed-by": "Desenvolvido por"
+  },
+  "available-document-types": {
+    "title": "Selecione um tipo de documento",
+    "subtitle": "Documento fornecido para cadastramento"
+  },
+  "entry-by-doc": {
+    "title-doc": "Informe seu documento",
+    "doc-placeholder": "Digite seu documento"
+  },
+  "entry-by-locator-code": {
+    "title-doc": "Informe o número do localizador"
+  },
+  "entry-by-login": {
+    "title-login": "Informe seu login e senha",
+    "user-field": "Login",
+    "pass-field": "Senha",
+    "user-placeholder": "Digite seu login",
+    "password-placeholder": "Digite sua senha"
+  },
+  "available-not-scheduled-entry-types": {
+    "title": "Selecione a forma de entrada",
+    "option-doc": "Entrar com documento",
+    "option-user": "Entrar com usuário e senha"
+  },
+  "available-scheduled-entry-types": {
+    "title": "Selecione uma forma de identificação",
+    "option-doc": "Documento",
+    "option-code": "Localizador",
+    "option-qrcode": "QR Code"
+  },
+  "accept-terms": {
+    "title": "Orientações e termo de aceite",
+    "agreed": "Aceitar"
+  },
+  "reason": {
+    "title": "Motivo",
+    "subtitle": "Antes de prosseguir, diga-nos o motivo da solicitação"
+  },
+  "success-feedback": {
+    "thanks-for-information": "Obrigado pelas informações.",
+    "take-your-id-card": "Você já pode retirar seu crachá!"
+  },
+  "person-details": {
+    "title": "Olá {{name}}!",
+    "subtitle": "Confira com atenção seus dados",
+    "information-title": "Seus dados",
+    "change-photo": "Alterar foto",
+    "phone": "Telefone",
+    "email": "E-mail"
+  },
+  "timeline": {
+    "start": "Início",
+    "identification": "Identificação",
+    "reason": "Motivo",
+    "confirmation": "Confirmação",
+    "orientation": "Orientação",
+    "survey": "Pesquisa",
+    "success": "Sucesso"
+  },
+  "photo-capture": {
+    "take-photo-manual-feedback": "Face encontrada! Clique em 'Tirar foto' e aguarde $X segundos",
+    "take-photo-automatic-feedback": "Face encontrada! A foto será capturada em $X segundos",
+    "face-found-feedback-positive": "Face encontrada!",
+    "face-found-feedback-negative": "Face não encontrada. Centralize seu rosto na tela"
+  },
+  "schedule-details": {
+    "title": "Olá {{name}}!",
+    "subtitle": "Confira com atenção seus dados",
+    "information-title": "Seus dados",
+    "change-photo": "Alterar foto",
+    "phone": "Telefone",
+    "visited-person": "Pessoa visitada",
+    "local": "Local da reunião/encontro",
+    "orientation-message": "Em caso de dúvidas solicite orientação com o atendente.",
+    "name": "Nome"
+  },
+  "document-type": {
+    "DOCUMENTO_INDEFINIDO": "Documento não informado",
+    "DOCUMENTO_IDENTIDADE": "Identidade",
+    "DOCUMENTO_CPF": "CPF",
+    "DOCUMENTO_CNH": "CNH",
+    "DOCUMENTO_PASSAPORTE": "Passaporte",
+    "REGISTRO_ESTRANGEIRO": "Registro estrangeiro",
+    "DOCUMENTO_OUTROS": "Outro documento",
+    "SEM_DOCUMENTO": "Sem documento"
+  },
+  "camera": {
+    "take-photo": "Tirar foto",
+    "error-title": "Erro na câmera",
+    "error-subtitle": "Não foi possível iniciar a câmera neste dispositivo"
+  },
+  "schedule-by-facial-recognition": {
+    "schedule-not-found-title": "Agendamento não encontrado",
+    "generic-content": "Toque em OK ou aguarde {{seconds}} segundo(s) para prosseguir para outras opçõe de entrada"
+  },
+  "person-facial-recognition": {
+    "person-not-found-title": "A face encontrada não corresponde ao documento informado"
+  },
+  "entry-by-qr-code": {
+    "step-1": "Abra o QR Code que você recebeu no email de agendamento",
+    "step-2": "Aproxime o seu dispositivo com a tela voltada para o leitor",
+    "step-3": "Aguarde enquanto o sistema lê o seu código e redireciona para a tela de visita"
+  },
+  "entry-by-qr-code-camera": {
+    "failure-title": "Não conseguimos ler o QR Code",
+    "failure-subtitle": "Posicione novamente seu QR Code no leitor"
+  },
+  "chat-bot-popup": {
+    "hello": "Olá!",
+    "sara-presentation": "Eu sou a Sara, sua assistente virtual.\nEstou aqui para agilizar a sua entrada.",
+    "not-now-sara": "Agora não, Sara!",
+    "great-lets-go": "Ótimo, vamos lá!",
+    "senior-virtual-assistent": "Assistente virtual Senior",
+    "ok": "Tudo bem, se mudar de ideia é\nsó pressionar o botão abaixo\nque eu volto para te ajudar."
+  }
+}

@@ -1,0 +1,13 @@
+@import url('~assets/fonts/open_sans/index.css');
+@import '~sass/index.scss';
+
+html {
+  overflow-x: hidden;
+}
+
+router-outlet ~ * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: translateX(0);
+}

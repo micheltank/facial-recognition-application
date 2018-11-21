@@ -1,0 +1,83 @@
+<section class="app-page no-padding">
+  <button class="btn btn-warning" *ngIf="user != null" style="position: absolute; z-index: 999999; right: 0; border-radius: 50%; height: 50px; width: 50px; margin: 10px"
+    (click)="user=null">
+    <i class="fas fa-arrow-left"></i></button>
+  <app-camera (faceDetected)="onFaceDetected()" (faceLost)="onFaceLost()" (photoTaken)="onPhotoTaken($event)"
+    operationMode="FACE_RECOGNITION" photoMode='AUTO_PHOTO' autoPhotoTimer="3" (cameraError)="onCameraError($event)"></app-camera>
+</section>
+<div *ngIf="!user && !cadastro" style="position: fixed; top: 0; background: rgba(0,0,0,0.6); width: 100%; height: 100%;">
+  <br><br>
+  <div class="container">
+    <button class="btn btn-primary" style="margin-right: 10px" (click)="cadastro = true">Novo Cadastro</button>
+    <br><br>
+    <table class="table">
+      <tbody *ngFor="let person of persons">
+        <tr (click)="selectUser(person)" style="cursor: pointer">
+          <td style="color: white">{{person.firstName}}</td>
+          <td style="color: white">{{person.lastName}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div *ngIf="cadastro" style="position: fixed; top: 0; background: rgba(0,0,0,0.6); width: 100%; height: 100%;">
+  <br><br>
+  <div class="col-md-4 offset-4">
+    <div style="display: flex; justify-content: center">
+      <div class="item">
+        <img style="width: 150px; height: 150px; border-radius: 50%; border: solid 8px green;
+            margin: auto; color: white"
+          [src]="photoTaken?.faceImageDataUrl || 'assets/images/person.svg'">
+      </div>
+    </div>
+    <hr style="background: red; border: solid 5px red; width: 60px">
+    <form [formGroup]="form">
+      <div class="form-group">
+        <label for="exampleInputEmail1" style="color: white">Nome</label>
+        <input formControlName="login" style="background: rgba(255, 255, 255, 0.8); border-radius: 0px" type="text"
+          class="form-control" placeholder="Seu login">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" style="color: white">Nome</label>
+        <input formControlName="firstName" style="background: rgba(255, 255, 255, 0.8); border-radius: 0px" type="text"
+          class="form-control" placeholder="Seu nome">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" style="color: white">Sobrenome</label>
+        <input formControlName="lastName" style="background: rgba(255, 255, 255, 0.8); border-radius: 0px" type="text"
+          class="form-control" placeholder="Seu sobrenome">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" style="color: white">Email</label>
+        <input formControlName="email" style="background: rgba(255, 255, 255, 0.8); border-radius: 0px" type="text"
+          class="form-control" placeholder="Seu email">
+      </div>
+      <p align="right">
+        <button type="submit" class="btn btn-link" (click)="cadastro=false">Cancelar</button>
+        <button type="submit" class="btn btn-primary" (click)="save()">{{cadastroLabel}}</button>
+      </p>
+    </form>
+  </div>
+</div>
+<div *ngIf="photoTaken?.faceImageDataUrl && user && !cadastro" style="position: fixed; top: 0; background: rgba(1, 1, 1, 0.8); 
+padding: 20px; height: 100%; width: 30%;">
+  <div style="display: flex; justify-content: center">
+    <div class="item">
+      <img style="width: 150px; height: 150px; border-radius: 50%; border: solid 8px green;
+      margin: auto" [src]="photoTaken?.faceImageDataUrl || 'assets/images/person.svg'">
+    </div>
+  </div>
+  <br>
+  <div *ngIf="loading">
+    <app-loader></app-loader>
+  </div>
+  <div *ngIf="!loading && !user?.recognition">
+    <app-empty-state></app-empty-state>
+  </div>
+  <div *ngIf="!loading && user?.recognition && !user?.blocked">
+    <app-recognized [person]="user"></app-recognized>
+  </div>
+  <div *ngIf="!loading && user?.blocked">
+    <app-blocked [person]="user"></app-blocked>
+  </div>
+</div>

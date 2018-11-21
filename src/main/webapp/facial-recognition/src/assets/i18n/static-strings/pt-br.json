@@ -1,0 +1,13 @@
+{
+  "sara-dialog": {
+    "QUE_BOM": "Que bom que aceitou minha ajuda.\nComo posso te ajudar hoje?",
+    "AGENDAMENTO": "De que forma quer encontrar seu agendamento?",
+    "CENTRALIZE_ROSTO_NA_TELA": "Centralize o rosto na tela",
+    "CONFIRMACAO": "Já vou avisar que você chegou.\nSó para confirmar, Verifique as informações apresentadas na tela",
+    "DESCULPE_ESCOLHER_OPCOES": "Desculpe, não conseguimos encontrar um agendamento para você nesse momento\nQue tal tentar utilizando algumas dessas opções?"
+  },
+  "sara-choice-options": {
+    "RETORNAR": "Retornar",
+    "CONFIRMAR": "Confirmar"
+  }
+}

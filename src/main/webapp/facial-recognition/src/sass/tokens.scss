@@ -1,0 +1,69 @@
+@import '~sass/variables.scss';
+
+@mixin gen_tokens_tlbr($prefix, $attr) {
+  @for $i from 1 through 6 {
+    .#{$prefix}-t-#{$i} {
+      #{$attr}-top: #{$i}0px;
+    }
+
+    .#{$prefix}-l-#{$i} {
+      #{$attr}-left: #{$i}0px;
+    }
+
+    .#{$prefix}-b-#{$i} {
+      #{$attr}-bottom: #{$i}0px;
+    }
+
+    .#{$prefix}-r-#{$i} {
+      #{$attr}-right: #{$i}0px;
+    }
+
+    .#{$prefix}-#{$i} {
+      #{$attr}: #{$i}0px;
+    }
+  }
+}
+
+@mixin gen_tokens_tlbr_owl($prefix, $attr) {
+  @for $i from 1 through 6 {
+    .#{$prefix}-t-#{$i}-owl + .#{$prefix}-t-#{$i}-owl {
+      #{$attr}-top: #{$i}0px;
+    }
+
+    .#{$prefix}-l-#{$i}-owl + .#{$prefix}-l-#{$i}-owl {
+      #{$attr}-left: #{$i}0px;
+    }
+  }
+}
+
+@mixin gen_tokens_font() {
+  @for $i from 1 through 7 {
+    .font-size-#{$i} {
+      @if $i == 1 {
+        font-size: calc(#{$i}rem * 0.75);
+      } @else {
+        font-size: calc(#{$i}rem * 0.5);
+      }
+    }
+  }
+}
+
+// mar-t-1 ... mar-r-5
+@include gen_tokens_tlbr('mar', 'margin');
+// pad-t-1 ... pad-r-5
+@include gen_tokens_tlbr('pad', 'padding');
+
+// para saber mais sobre css owls: https://css-tricks.com/lobotomized-owls/
+// mar-t-1-owl ... mar-r-5-owl
+@include gen_tokens_tlbr_owl('mar', 'margin');
+// pad-t-1-owl ... pad-r-5-owl
+@include gen_tokens_tlbr_owl('pad', 'padding');
+
+// font-size-1 ... font-size-6
+@include gen_tokens_font();
+
+$border-radius-1: 2px;
+$border-radius-2: 3px;
+$border-radius-3: 4px;
+$border-radius-4: 6px;
+$border-radius-5: 10px;

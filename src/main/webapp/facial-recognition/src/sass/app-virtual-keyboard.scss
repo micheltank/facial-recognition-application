@@ -1,0 +1,69 @@
+@import '~sass/colors.scss';
+
+:root {
+  --keyboard-btn-width-height: 6vw;
+  --keyboard-btn-text-size: 2.5vw;
+  --keyboard-btn-max-width-height: 60px;
+  --keyboard-btn-space-max-width: 250px;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --keyboard-btn-width-height: 5.5vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    --keyboard-btn-text-size: 25px;
+  }
+}
+
+.ui-keyboard {
+  background-color: rgba($white, 1);
+  // display necessário para fazer com que o container tenha o height baseado
+  // no height do conteúdo
+  display: table;
+  border: none;
+}
+
+.keyboard-button-override {
+  height: var(--keyboard-btn-width-height);
+  max-height: var(--keyboard-btn-max-width-height);
+  background-color: $silver;
+  border: none;
+  margin: 2px;
+  text-align: left;
+  line-height: normal;
+  @include transition-out(background-color);
+  font-size: var(--keyboard-btn-text-size) !important;
+}
+
+.ui-keyboard-button:not(.ui-keyboard-accept).ui-keyboard-button:not(.ui-keyboard-space).ui-keyboard-button:not(.ui-keyboard-cancel).ui-keyboard-button:not(.ui-keyboard-tab) {
+  width: calc(var(--keyboard-btn-width-height) * 1.3);
+  max-width: calc(var(--keyboard-btn-max-width-height) * 1.3);
+}
+
+.ui-keyboard-accept,
+.ui-keyboard-space {
+  min-width: calc(var(--keyboard-btn-width-height) * 1.3);
+}
+
+.ui-keyboard-space {
+  max-width: var(--keyboard-btn-space-max-width);
+}
+
+.ui-keyboard-text {
+  margin-bottom: 100% !important;
+}
+
+.ui-state-hover {
+  // necessario deixar no hover porque :active/:focus nao funciona no touch mobile
+  @include transition-in(background-color, 0.1s);
+  background-color: darken($silver, 10%);
+}
+
+.ui-keyboard-accept {
+  background-color: var(--color-theme);
+  color: $white;
+}

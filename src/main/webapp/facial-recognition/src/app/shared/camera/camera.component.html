@@ -1,0 +1,5 @@
+<section class="app-camera-container" #sectionContainer [ngClass]="{'full-viewport': !isSizeCustomized()}">
+  <video #cameraVideo autoplay muted class="app-camera-video"></video>
+  <canvas #faceRecognitionCanvasElRef class="app-camera-video"></canvas>
+  <canvas #faceFrameCanvasElRef class="app-camera-video face-frame-canvas"></canvas>
+</section>

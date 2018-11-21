@@ -1,0 +1,235 @@
+{
+  "app": {
+    "back-button": "Back",
+    "next-button": "Next",
+    "submit": "Submit",
+    "countdown-prefix": "This message will automatically close after ",
+    "countdown-sufix": "s of inactivity",
+    "missing-photo": "To finish your registration, we need a new photo"
+  },
+  "app-errors-handler": {
+    "title-generic-neterr": "An unexpected problem occurred",
+    "content-neterr": "Please go to the reception desk to perform the manual operation",
+    "try-again": "Try again",
+    "title-autherr": "You session has expired",
+    "content-autherr": "Check if you are connected and if you have permission to access this content, or contact the system administrator",
+    "confirmation-btn": "Understood",
+    "title-inactivity": "Is anyone there?",
+    "subtitle-inactivity": "",
+    "content-inactivity": "Touch the screen to continue.",
+    "title-windowed": "Windowed mode detected",
+    "content-windowed": "This application can only be used in full screen mode",
+    "subtitle-invalid-credential": "Invalid username and password",
+    "content-invalid-credential": "Please contact your system administrator"
+  },
+  "backend-errors": {
+    "title": {
+      "DOCUMENT_TYPE_NOT_FOUND": "No document type found",
+      "PERSON_NOT_FOUND_BY_DOCUMENT": "Document not found",
+      "DOCUMENT_NUMBER_DUPLICATE": "The document you entered is duplicated",
+      "PERSON_WITHOUT_VALID_ROLE": "You don't have a valid role",
+      "PERSON_HAVE_PROVISORY_CREDENTIAL_IN_USE": "Temporary ID card open",
+      "ALREADY_USED_MAXIMUM_NUMBER_OF_CARDS": "Tempoary ID card limit reached",
+      "INVALID_USER_AND_PASSWORD": "Invalid username or password",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_EMPLOYEE": "Person not found",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_PARTNER": "Person not found",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_THIRD_PARTIES": "Person not found",
+      "CREDENTIAL_CARD_NUMBER_NOT_FOUND": "Credential not found",
+      "PERSON_NOT_FOUND": "Person not found",
+      "UNAVAIBLE_SERVICE": "Unavailable service",
+      "STATUS_FAIL": "Unavailable service",
+      "SCHEDULING_NOT_FOUND": "Appointment not found",
+      "SCHEDULING_NOT_FOUND_BY_DOCUMENT": "Appointment not found",
+      "SCHEDULING_NOT_FOUND_BY_LOCATOR_CODE": "Appointment not found",
+      "PHOTO_TOO_LONG": "A problem occurred while updating the photo",
+      "TIMEOUT_WAITING_SYNC_MESSAGE": "An unexpected error occurred in the server",
+      "SELF_SERVICE_TERMINAL_IS_OUT_OF_ID_CARDS": "Could not issue ID card",
+      "ERROR_EXECUTING_REQUEST": "An unexpected error occurred in the server",
+      "SELF_SERVICE_TERMINAL_NOT_FOUND_BY_ID": "Terminal not found",
+      "SELF_SERVICE_TERMINAL_WITHOUT_ID": "Terminal not found",
+      "undefined": "An unexpected problem occurred",
+      "SELF_SERVICE_TERMINAL_IS_DISABLED": "The kiosk is disabled",
+      "VISIT_TYPE_NOT_FOUND": "Visit type not found",
+      "ERROR_CARD_BIN_FULL": "Could not issue the ID card",
+      "DIGICON_DISPENSER_INITIALIZE": "Failure while calling the dispenser",
+      "DIGICON_DISPENSER_CONNECTION": "Failure while communicating with the dispenser",
+      "SELF_SERVICE_TERMINAL_IN_USE": "The terminal is already in use",
+      "DIGICON_PRINTER_CONNECTION": "Failure while communicating with printer",
+      "DIGICON_PRINTER_UNEXPECTED": "Failure while calling printer",
+      "DIGICON_PRINTER_WITHOUT_PAPER": "Coult not print receipt",
+      "DIGICON_DISPENSER_UNEXPECTED": "Failure while calling dispenser",
+      "MULTIPLE_SCHEDULES_BY_DOCUMENT": "Cannot carry out the entry",
+      "VIDEOSOFT_CONNECT_DISPENSER": "Failure while communicating with the dispenser",
+      "VIDEOSOFT_UNEXPECTED_DISPENSER": "Failure while calling dispenser",
+      "SELF_SERVICE_TERMINAL_NOT_SELECTED": "Could not configure kiosk",
+      "INVALID_PHOTO_TYPE": "Failure while submitting photo",
+      "CONFIGCENTER_INVALID_SAMSENIOR": "Invalid Configuration",
+      "PERSON_WITHOUT_PHOTO": "Person without photo",
+      "SELF_SERVICE_TERMINAL_IS_NOT_PROPERLY_CONFIGURED": "Invalid configuration"
+    },
+    "subtitle": {
+      "DOCUMENT_TYPE_NOT_FOUND": "Could not load the configured document types",
+      "PERSON_NOT_FOUND_BY_DOCUMENT": "The person corresponding to this identity document was not found",
+      "DOCUMENT_NUMBER_DUPLICATE": "This identity document is associated with more than one person",
+      "PERSON_WITHOUT_VALID_ROLE": "Role invalid for temporary credential withdrawal",
+      "PERSON_HAVE_PROVISORY_CREDENTIAL_IN_USE": "You have another temporary ID card active",
+      "ALREADY_USED_MAXIMUM_NUMBER_OF_CARDS": "You have already used the maximum number of temporary ID cards allowed for this month",
+      "INVALID_USER_AND_PASSWORD": "The password or the username you entered are incorrect",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_EMPLOYEE": "The self-service terminal does not allow issuing temporary credentials for employees",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_PARTNER": "The self-service terminal does not allow issuing temporary credentials for partners",
+      "SELF_SERVICE_TERMINAL_DONT_ALLOW_THIRD_PARTIES": "The self-service terminal does not allow issuing temporary credentials for third parties",
+      "CREDENTIAL_CARD_NUMBER_NOT_FOUND": "Credential card number not found",
+      "PERSON_NOT_FOUND": "Could not find the register of the entered person",
+      "UNAVAIBLE_SERVICE": "This resource is temporarily unavailable",
+      "STATUS_FAIL": "This resource is temporarily unavailable",
+      "SCHEDULING_NOT_FOUND": "The appointment number was not found",
+      "SCHEDULING_NOT_FOUND_BY_LOCATOR_CODE": "The appointment corresponding to this locator code was not found",
+      "SCHEDULING_NOT_FOUND_BY_DOCUMENT": "The appointment corresponding to this identity document was not found",
+      "PHOTO_TOO_LONG": "The image size exceeded the maximum supported limit",
+      "TIMEOUT_WAITING_SYNC_MESSAGE": "Could not establish a connection at this time",
+      "ERROR_EXECUTING_REQUEST": "This might have occurred due to a maintenance in our servers",
+      "SELF_SERVICE_TERMINAL_NOT_FOUND_BY_ID": "The self-service terminal is not properly configured",
+      "SELF_SERVICE_TERMINAL_WITHOUT_ID": "The self-service terminal is not properly configured",
+      "undefined": "This might have occurred due to a failure during navigation",
+      "SELF_SERVICE_TERMINAL_IS_DISABLED": "Could not obtain the kiosk configurations as it is inactive",
+      "VISIT_TYPE_NOT_FOUND": "The visit type associated with this appointment was not found.",
+      "ERROR_CARD_BIN_FULL": "The discarded ID card compartment is full",
+      "DIGICON_DISPENSER_INITIALIZE": "The dispenser configuration is incorrect",
+      "DIGICON_DISPENSER_CONNECTION": "Could not establish communication with the ID card dispenser",
+      "SELF_SERVICE_TERMINAL_IN_USE": "This terminal is being used in another machine",
+      "DIGICON_PRINTER_CONNECTION": "Could not establish communication with the printer",
+      "DIGICON_PRINTER_UNEXPECTED": "An unexpected error occurred while trying to establish connection with the printer",
+      "DIGICON_PRINTER_WITHOUT_PAPER": "The printer has no paper",
+      "DIGICON_DISPENSER_UNEXPECTED": "An unexpected error occurred while trying to establish communication with the dispenser",
+      "MULTIPLE_SCHEDULES_BY_DOCUMENT": "There is more than one appointment for the same identity document in this period",
+      "VIDEOSOFT_CONNECT_DISPENSER": "Could not establish communication with the ID card dispenser",
+      "VIDEOSOFT_UNEXPECTED_DISPENSER": "An unexpected error occurred while trying to establish communication with the dispenser",
+      "SELF_SERVICE_TERMINAL_NOT_SELECTED": "A kiosk must be selected for use",
+      "INVALID_PHOTO_TYPE": "Format not supported",
+      "CONFIGCENTER_INVALID_SAMSENIOR": "Verify the configuration in SeniorConfigCenter",
+      "PERSON_WITHOUT_PHOTO": "Cannot carry out the facial recognition for people without a photo registered in the system",
+      "SELF_SERVICE_TERMINAL_IS_NOT_PROPERLY_CONFIGURED": "Please check if the COM port value is configured correctly"
+    }
+  },
+  "home": {
+    "welcome": "Welcome!",
+    "obtain-temporary-id-card": "Obtain temporary ID card",
+    "search-scheduled-visit": "Search for scheduled visit",
+    "developed-by": "Developed by"
+  },
+  "available-document-types": {
+    "title": "Select a document type",
+    "subtitle": "Document provided for the registration"
+  },
+  "entry-by-doc": {
+    "title-doc": "Enter your identity document number",
+    "doc-placeholder": "Enter your identity document"
+  },
+  "entry-by-locator-code": {
+    "title-doc": "Enter the locator code number"
+  },
+  "entry-by-login": {
+    "title-login": "Enter your username and password",
+    "user-field": "Username",
+    "pass-field": "Password",
+    "user-placeholder": "Enter your username",
+    "password-placeholder": "Enter your password"
+  },
+  "available-not-scheduled-entry-types": {
+    "title": "Select the entry method",
+    "option-doc": "Enter with an identity document",
+    "option-user": "Enter with username and password"
+  },
+  "available-scheduled-entry-types": {
+    "title": "Select an identification method",
+    "option-doc": "Identity Document",
+    "option-code": "Locator code",
+    "option-qrcode": "QR Code"
+  },
+  "accept-terms": {
+    "title": "Guidelines and acceptance term",
+    "agreed": "Accept"
+  },
+  "reason": {
+    "title": "Reason",
+    "subtitle": "Before proceeding, tell us the reason for your request"
+  },
+  "success-feedback": {
+    "thanks-for-information": "Thanks for the information.",
+    "take-your-id-card": "You may now take your ID card!"
+  },
+  "person-details": {
+    "title": "Hello {{name}}!",
+    "subtitle": "Check your information carefully",
+    "information-title": "Your information",
+    "change-photo": "Change photo",
+    "phone": "Phone number",
+    "email": "Email"
+  },
+  "timeline": {
+    "start": "Start",
+    "identification": "Identification",
+    "reason": "Reason",
+    "confirmation": "Confirmation",
+    "orientation": "Orientation",
+    "survey": "Survey",
+    "success": "Success"
+  },
+  "photo-capture": {
+    "take-photo-feedback": "Touch and wait $X seconds",
+    "face-found-feedback-positive": "Face found!",
+    "take-photo-manual-feedback": "Face found! Click on 'Take photo' and wait $X seconds",
+    "take-photo-automatic-feedback": "Face found! The photo will be taken in $X seconds",
+    "face-found-feedback-negative": "Face not found. Center your face in the screen"
+  },
+  "schedule-details": {
+    "title": "Hello {{name}}!",
+    "subtitle": "Check your information carefully",
+    "information-title": "Your information",
+    "change-photo": "Change photo",
+    "phone": "Phone number",
+    "visited-person": "Visited person",
+    "local": "Meeting location",
+    "orientation-message": "If you have any questions, please ask the attendant for assistance.",
+    "name": "Name"
+  },
+  "document-type": {
+    "DOCUMENTO_INDEFINIDO": "Document not informed",
+    "DOCUMENTO_IDENTIDADE": "Identity card",
+    "DOCUMENTO_CPF": "CPF",
+    "DOCUMENTO_CNH": "Driver's license",
+    "DOCUMENTO_PASSAPORTE": "Passport",
+    "REGISTRO_ESTRANGEIRO": "Foreigner register",
+    "DOCUMENTO_OUTROS": "Other document",
+    "SEM_DOCUMENTO": "No document"
+  },
+  "camera": {
+    "take-photo": "Take photo",
+    "error-title": "Camera error",
+    "error-subtitle": "Could not start the camera in this device"
+  },
+  "schedule-by-facial-recognition": {
+    "schedule-not-found-title": "Schedule not found",
+    "generic-content": "Touch OK or wait {{seconds}} second(s) to proceed to other available entry types"
+  },
+  "person-facial-recognition": {
+    "person-not-found-title": "The face found does not match the informed document"
+  },
+  "entry-by-qr-code": {
+    "step-1": "Open the QR Code you received in the scheduling email",
+    "step-2": "Approach your device with the screen facing the reader",
+    "step-3": "Wait while the system reads your code and opens the visit screen"
+  },
+  "entry-by-qr-code-camera": {
+    "failure-title": "We could not read the QR Code",
+    "failure-subtitle": "Please position your QR Code in the reader again"
+  },
+  "chat-bot-popup": {
+    "hello": "Hello!",
+    "sara-presentation": "I'm Sara, your virtual assistant.\nI'm here to simplify your entry.",
+    "not-now-sara": "Not now, Sara!",
+    "great-lets-go": "Great, let's go!",
+    "senior-virtual-assistent": "Senior virtual assistant",
+    "ok": "Ok, if you change your mind\njust press the button below\nand I help you again."
+  }
+}
